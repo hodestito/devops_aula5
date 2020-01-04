@@ -18,4 +18,12 @@ node {
 
         }
     }
+
+    stage('Deploy do container via ansible-playbook') {
+
+        ansiblePlaybook(
+            playbook: 'playbook.yml'
+        )
+
+    }
 }
