@@ -22,7 +22,9 @@ node {
     stage('Deploy do container via ansible-playbook') {
 
         ansiblePlaybook(
-            playbook: 'playbook.yml'
+            playbook: 'playbook.yml',
+            installation: '/usr/local/bin/ansible-playbook',
+            sudo: true
         )
 
     }
