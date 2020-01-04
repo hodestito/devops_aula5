@@ -21,10 +21,10 @@ node {
 
     stage('Deploy do container via ansible-playbook') {
 
-        ansiblePlaybook(
-            playbook: 'playbook.yml',
-            installation: '/usr/local/bin/'
-        )
+        //ansiblePlaybook(
+        //    playbook: 'playbook.yml'
+        //)
+        sh 'ansible-playbook playbook.yml'
 
     }
 }
