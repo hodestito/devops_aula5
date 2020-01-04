@@ -23,8 +23,7 @@ node {
 
         ansiblePlaybook(
             playbook: 'playbook.yml',
-            installation: '/usr/local/bin/ansible-playbook',
-            sudo: true
+            installation: '/usr/local/bin/ansible-playbook'
         )
 
     }
