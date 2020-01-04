@@ -24,7 +24,8 @@ node {
         //ansiblePlaybook(
         //    playbook: 'playbook.yml'
         //)
-        sh 'ansible-playbook playbook.yml'
+        sh '/usr/local/bin/ansible-playbook playbook.yml',
+        sh 'whoami'
 
     }
 }
