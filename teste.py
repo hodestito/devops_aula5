@@ -7,7 +7,7 @@ app = Flask(__name__)
 # default route
 @app.route('/')
 def index():
-    return 'Hello World!!!'
+    return 'Hello World!!! Teste de build automatizado!'
 
 # function for responses
 def results():
